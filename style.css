@@ -1,6 +1,6 @@
 body {
-background-image: linear-gradient(#C3423F,#211A1E);
-color: #FDE74C;
+background-image: linear-gradient(#C3423F,#FDE74C);
+color: #211A1E;
 background-repeat: no-repeat;
 background-size: cover;
 background-attachment: fixed;
@@ -10,8 +10,8 @@ background-attachment: fixed;
 border-style: groove;
 padding: 10px;
 border-width: 10px;
-border-color: #9BC53D;
-background-color: #5BC0EB;
+border-color: #5BC0EB;
+background-color: #9BC53D;
 }
 
 .card-title {
@@ -23,3 +23,20 @@ font-weight: 500 !important;
 font-size: large;
 font-weight: 500;
 }
+
+.select-dropdown {
+color: #211A1E;
+}
+
+.btn {
+color: #211A1E;
+background-color: #9BC53D;
+border-style:solid;
+border-width: 1px;
+border-color:#5BC0EB;
+}
+
+.input-field>label{
+color: #211A1E;
+}
+
