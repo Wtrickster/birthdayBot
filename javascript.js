@@ -4,6 +4,18 @@ const populationIO = require('api-population-io');
 
 populationIO.wpRank.onDate(data, [callback])
 
+populationIO.lifeExpectancy.total({
+        sex: 'male',
+        country: 'United Kingdom',
+        dob: '1970-01-01'
+    })
+    .then((data) => {
+        console.log('total_life_expectancy:', data.total_life_expectancy);
+    })
+    .catch((err) => {
+        console.log(err.detail);
+    });
+
 $(document).ready(function() {
     $('select').formSelect();
 });
@@ -45,17 +57,19 @@ for (var i = 0; i < results.length; i++) {
     var pic = celebId
 
     // Creating a paragraph tag with the result item's rating
-    var p = $("<p>").text(fulName);
-    var p = $("<p>").text("Birthday: " + dob);
-    var p = $("<p>").text("age: " + age);
+    var p1 = $("<p>").text(fullName);
+    var p2 = $("<p>").text("Birthday: " + dob);
+    var p3 = $("<p>").text("age: " + age);
     // Creating an image tag
     var personImage = $("<img>");
 
     // Giving the image tag an src attribute of a proprty pulled off the
     // result item
-    personImage.attr("src", results[i].images.fixed_height.url);
+    personImage.attr("href=https://celebritybucks.com/images/celebs/thumb/" + pic + ".jpg");
 
     // Appending the paragraph and personImage we created to the "gifDiv" div we created
-    newDiv.append(p);
+    newDiv.append(p1);
+    newDiv.append(p2);
+    newDiv.append(p3);
     newDiv.append(personImage);
 };
