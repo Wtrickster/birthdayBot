@@ -1,0 +1,25 @@
+body {
+background-image: linear-gradient(#C3423F,#211A1E);
+color: #FDE74C;
+background-repeat: no-repeat;
+background-size: cover;
+background-attachment: fixed;
+}
+
+.card {
+border-style: groove;
+padding: 10px;
+border-width: 10px;
+border-color: #9BC53D;
+background-color: #5BC0EB;
+}
+
+.card-title {
+font-size: larger !important;
+font-weight: 500 !important;
+}
+
+.card-content {
+font-size: large;
+font-weight: 500;
+}
