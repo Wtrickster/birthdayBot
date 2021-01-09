@@ -1,7 +1,7 @@
 $(document).ready(function(){
     $('select').formSelect();
   });
-  
+console.log("hi");
 // import populationIO from 'api-population-io';
 // const populationIO = require('api-population-io');
 
