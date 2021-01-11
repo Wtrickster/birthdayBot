@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mockup Page</title>
+    <title>Birthday Bot</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="APIs.js"></script>
     <script src="scripts.js"></script>
@@ -14,19 +15,26 @@
 </head>
 
 <body>
-    <div class="card blue-grey darken-1">
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo center">Birthday Bot</a>
+            <ul id="nav-mobile" class="left hide-on-med-and-down">
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
         <div class="row">
             <div class="col s12">
-                <div class="container">
-                    <div class="card-content white-text">
-                        <span class="card-title">Who else shares your Birthday?</span>
+                <div class="card">
+                    <div class="card-content center-align">
+                        <span class="card-title">Who else shares your birthday?</span>
                         <p>How many people were born the same day as you? Which celebrities share your birthday? Submit your birthdate and see!
                         </p>
                     </div>
-                    <div class="card-action">
-                        <div class="input-field col s12 m6">
+                    <div class="row">
+                        <div class="input-field col s4 l2 offset-l2">
                             <select>
-                                <option value="" disabled selected>Choose Month</option>
+                                <option value="" disabled selected>Choose</option>
                                 <option value="1">January</option>
                                 <option value="2">February</option>
                                 <option value="3">March</option>
@@ -42,9 +50,9 @@
                             </select>
                             <label>Month</label>
                         </div>
-                        <div class="input-field col s12 m6">
+                        <div class="input-field col s4 l2">
                             <select>
-                                <option value="" disabled selected>Choose Day</option>
+                                <option value="" disabled selected>Choose</option>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
                                 <option value="3">3</option>
@@ -79,7 +87,7 @@
                             </select>
                             <label>Day</label>
                         </div>
-                        <div class="col s12">
+                        <div class="col s4 l2 offset-l2">
                             <button class="btn waves-effect waves-light" type="submit" name="action">Submit
                                 <i class="material-icons right">send</i>
                             </button>
@@ -88,10 +96,32 @@
                 </div>
             </div>
         </div>
+        <div class="row">
+            <div class="col s12">
+                <div class="card">
+                    <div class="card-content center-align">
+                        <span class="card-title">How many people were born the same day as you?</span>
+                        <p>Our results say (OUTPUT) people were born on (INPUT DATE).
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12">
+                    <div class="card">
+                        <div class="card-content center-align">
+                            <span class="card-title">Who else shares your Birthday?</span>
+                            <p>You share a birthday with these celebrities!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script type="text/javascript" src="script.js"></script>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script type="text/javascript" src="script.js"></script>
 </body>
 
 </html>
