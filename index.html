@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mockup Page</title>
+    <title>Birthday Bot</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
@@ -13,17 +13,24 @@
 </head>
 
 <body>
+    <nav>
+        <div class="nav-wrapper">
+          <a href="#" class="brand-logo center">Birthday Bot</a>
+          <ul id="nav-mobile" class="left hide-on-med-and-down">
+          </ul>
+        </div>
+      </nav>
     <div class="container">
         <div class="row">
             <div class="col s12">
                 <div class="card">
-                    <div class="card-content">
-                        <span class="card-title">Who else shares your Birthday?</span>
+                    <div class="card-content center-align">
+                        <span class="card-title">Who else shares your birthday?</span>
                         <p>How many people were born the same day as you? Which celebrities share your birthday? Submit your birthdate and see!
                         </p>
                     </div>
                     <div class="row">
-                        <div class="input-field col s4">
+                        <div class="input-field col s4 l2 offset-l2">
                             <select>
                                 <option value="" disabled selected>Choose</option>
                                 <option value="1">January</option>
@@ -41,7 +48,7 @@
                             </select>
                             <label>Month</label>
                         </div>
-                        <div class="input-field col s4">
+                        <div class="input-field col s4 l2">
                             <select>
                                 <option value="" disabled selected>Choose</option>
                                 <option value="1">1</option>
@@ -78,7 +85,7 @@
                             </select>
                             <label>Day</label>
                         </div>
-                        <div class="col s4">
+                        <div class="col s4 l2 offset-l2">
                             <button class="btn waves-effect waves-light" type="submit" name="action">Submit
                                 <i class="material-icons right">send</i>
                             </button>
