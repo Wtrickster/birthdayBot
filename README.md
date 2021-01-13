@@ -1,2 +1,2 @@
-# HolidayCookingBot
+# birthdayBot
 Group Project
