@@ -5,16 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Birthday Bot</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="style.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="APIs.js"></script>
-    <script src="scripts.js"></script>
 
+    <!--CSS Links-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 
 <body>
+
     <!-- Navbar -->
     <nav>
         <div class="nav-wrapper">
@@ -23,129 +22,40 @@
             </ul>
         </div>
     </nav>
-    <!-- Intro & Birthday Submit form -->
-    <nav>
-        <div class="container">
-            <div class="row">
-                <div class="col s12">
-                    <div class="card">
-                        <div class="card-content center-align">
-                            <span class="card-title">Who else shares your birthday?</span>
-                            <p>How many people were born the same day as you? Which celebrities share your birthday? Submit your birthdate and see!
-                            </p>
-                        </div>
-                        <div class="row">
-                            <!-- Dropdown for Months Selection -->
-                            <div class="input-field col s4 l2 offset-l2">
-                                <select>
-                         </div>
-    </nav>
 
+    <!-- Greeting & Zodiac API results -->
     <div class="container">
         <div class="row">
             <div class="col s12">
                 <div class="card">
                     <div class="card-content center-align">
-                        <span class="card-title">Who else shares your birthday?</span>
-                        <p>What is your Zodiac sign? Which celebrities share your birthday? Submit your birthdate and see!
-                        </p>
+                        <div class="card-title">
+                            <p class="greet"></p>
+                        </div>
                     </div>
-                    <div class="row">
-                        <!-- Dropdown for Months Selection -->
-                        <div class="input-field col s4 l2 offset-l2">
-                            <select>
+                </div>
+            </div>
+        </div>
+    </div>
 
-                                <option value="" disabled selected>Choose</option>
-                                <option value="1">January</option>
-                                <option value="2">February</option>
-                                <option value="3">March</option>
-                                <option value="4">April</option>
-                                <option value="5">May</option>
-                                <option value="6">June</option>
-                                <option value="7">July</option>
-                                <option value="8">August</option>
-                                <option value="9">September</option>
-                                <option value="10">October</option>
-                                <option value="11">November</option>
-                                <option value="12">December</option>
-                            </select>
-                                <label>Month</label>
-                            </div>
-                            <!-- Dropdown for Day Selection -->
-                            <div class="input-field col s4 l2">
-                                <select>
-                                <option value="" disabled selected>Choose</option>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                                <option value="6">6</option>
-                                <option value="7">7</option>
-                                <option value="8">8</option>
-                                <option value="9">9</option>
-                                <option value="10">10</option>
-                                <option value="11">11</option>
-                                <option value="12">12</option>
-                                <option value="13">13</option>
-                                <option value="14">14</option>
-                                <option value="15">15</option>
-                                <option value="16">16</option>
-                                <option value="17">17</option>
-                                <option value="18">18</option>
-                                <option value="19">19</option>
-                                <option value="20">20</option>
-                                <option value="21">21</option>
-                                <option value="22">22</option>
-                                <option value="23">23</option>
-                                <option value="24">24</option>
-                                <option value="25">25</option>
-                                <option value="26">26</option>
-                                <option value="27">27</option>
-                                <option value="28">28</option>
-                                <option value="29">29</option>
-                                <option value="30">30</option>
-                                <option value="31">31</option>
-                            </select>
-                                <label>Day</label>
-                            </div>
-                            <!-- Submit Button -->
-                            <div class="col s4 l2 offset-l2">
-                                <button class="btn waves-effect waves-light" type="submit" name="action">Submit
-                                <i class="material-icons right">send</i>
-                            </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Zodiac API results -->
+    <!-- Celebrity API results -->
+    <div class="container">
         <div class="row">
-            <div class="row">
-                <div class="col s12">
-                    <div class="card">
-                        <div class="card-content center-align">
-                            <span class="card-title">What's Your Sign?</span>
-                            <p>Your Zodiac sign is [ ]
-                            </p>
-                        </div>
-                        <!-- Celebrity API results -->
-                        <div class="row">
-                            <div class="col s12">
-                                <div class="card">
-                                    <div class="card-content center-align">
-                                        <span class="card-title">Who else shares your Birthday?</span>
-                                        <p>You share a birthday with these celebrities!
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
+            <div class="col s12">
+                <div class="card">
+                    <div class="card-content center-align">
+                        <div class="card-title">
+                            <div class="stuffin"></div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+
+    <!--Javascript Links-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="javascript.js"></script>
 </body>
 
 </html>

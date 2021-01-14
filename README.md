@@ -1,2 +1,3 @@
 # birthdayBot
 Group Project
+♈♉♊♋♌♍♎♏♐♑♒♓
