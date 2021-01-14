@@ -1,52 +1,52 @@
 body {
-font-family: 'Fredoka One', cursive;
-background-image: linear-gradient(#C3423F,#FDE74C);
-color: #211A1E;
-background-repeat: no-repeat;
-background-size: cover;
-background-attachment: fixed;
+    font-family: 'Fredoka One', cursive;
+    background-image: linear-gradient(#C3423F, #FDE74C);
+    color: #211A1E;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .nav-wrapper {
-background-color: #211A1E;
+    background-color: #211A1E;
 }
 
 .brand-logo.center {
-color: #FDE74C;
+    color: #FDE74C;
 }
+
 .card {
-border-style: groove;
-padding: 10px;
-border-width: 10px;
-border-color: #211A1E;
-background-color: #5BC0EB;
+    border-style: groove;
+    padding: 10px;
+    border-width: 10px;
+    border-color: #211A1E;
+    background-color: #5BC0EB;
 }
 
 .card-title {
-font-size: larger !important;
-font-weight: 500 !important;
+    font-size: larger !important;
+    font-weight: 500 !important;
 }
 
 .card-content {
-font-size: 17px;
-font-weight: 500;
+    font-size: 17px;
+    font-weight: 500;
 }
 
 .select-dropdown {
-color: #211A1E;
+    color: #211A1E;
 }
 
 .btn {
-color: #211A1E;
-font-weight: 500;
-background-color: #FDE74C;
-padding-bottom: 25%;
-border-style:solid;
-border-width: 1px;
-border-color:#211A1E;
+    color: #211A1E;
+    font-weight: 500;
+    background-color: #FDE74C;
+    padding-bottom: 25%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #211A1E;
 }
 
-.input-field>label{
-color: #211A1E;
+.input-field>label {
+    color: #211A1E;
 }
-

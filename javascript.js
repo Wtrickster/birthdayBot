@@ -71,11 +71,8 @@ function render2() {
         //repeat for each response
         for (var i = 0; i < response.Birthdays.length; i++) {
             //creates a div and adding a class to make it a row
-            var row = $("<div>").addClass(function(index) {
-                return "row test celeb-" + index++
-            });;
-
-            //placing row in its place
+            var row = $("<div>").addClass("row test celeb-" + i)
+                //placing row in its place
             $(".stuffin").append(row);
 
             //creates a div and adding a class to make it a column
