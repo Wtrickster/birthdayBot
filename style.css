@@ -23,37 +23,7 @@ body {
     background-color: #5BC0EB;
 }
 
-<<<<<<< HEAD
-.greet {
+.card-content {
 font-size: 200%;
 }
 
-=======
-.card-title {
-    font-size: larger !important;
-    font-weight: 500 !important;
-}
-
-.card-content {
-    font-size: 17px;
-    font-weight: 500;
-}
-
-.select-dropdown {
-    color: #211A1E;
-}
-
-.btn {
-    color: #211A1E;
-    font-weight: 500;
-    background-color: #FDE74C;
-    padding-bottom: 25%;
-    border-style: solid;
-    border-width: 1px;
-    border-color: #211A1E;
-}
-
-.input-field>label {
-    color: #211A1E;
-}
->>>>>>> 4880212180dc4b4389cbc8e96428ba104d5a4fad
