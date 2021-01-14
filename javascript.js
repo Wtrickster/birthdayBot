@@ -38,8 +38,6 @@ function render1() {
     }).then(function(response) {
         //creates a div
         var greet = $("<div>");
-        // adding a class to make it a column
-        // greet.addClass("col s12");
         //input response data
         greet.text("Which " + response + "'s birthday is today?");
         //placing row in its place
