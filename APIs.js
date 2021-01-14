@@ -39,7 +39,7 @@ function render1() {
         //creates a div
         var greet = $("<div>");
         // adding a class to make it a column
-        greet.addClass("col s12 ");
+        // greet.addClass("col s12");
         //input response data
         greet.text("Which " + response + "'s birthday is today?");
         //placing row in its place
@@ -79,14 +79,15 @@ function render2() {
             $(".stuffin").append(row);
 
             //creates a div and adding a class to make it a column
-            var img = $("<img>").addClass("col s6");
+            var img = $("<img>").addClass("col s12 m6 l6");
 
             //adding a img url
-            img.attr("src", "https://celebritybucks.com/images/celebs/full/" + response.Birthdays[i].celebId + ".jpg")
+            img.attr("src", "https://celebritybucks.com/images/celebs/full/" + response.Birthdays[i].celebId + ".jpg");
                 //placing img in its place
+            console.log(response.Birthdays[i].celebId);
             row.append(img);
             //adding a class to make it a column and input response data
-            var info = $("<div>").addClass("col s6").text(response.Birthdays[i].name + " just turned " + response.Birthdays[i].age + " years old!");
+            var info = $("<div>").addClass("info col s12 m6 l6").text(response.Birthdays[i].name + " just turned " + response.Birthdays[i].age + " years old!");
             //placing info in its place
             row.append(info);
 
