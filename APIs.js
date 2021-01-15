@@ -1,3 +1,9 @@
+
+  $(document).ready(function(){
+    $('select').formSelect();
+  });
+        
+
 //get current date
 var curday = function(sp) {
     today = new Date();
