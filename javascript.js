@@ -11,6 +11,9 @@ var curday = function(sp) {
 };
 console.log(curday('-'));
 
+//
+var userName = " "
+
 //start on load
 $(document).ready(function() {
     render1();
@@ -39,10 +42,10 @@ function render1() {
         //creates a div
         var greet = $("<div>");
         //input response data
-        greet.text("Which " + response + "'s birthday is today?");
+        greet.text("Hi there" + userName + "Which " + response + "'s birthday is today?");
         //placing row in its place
         $(".greet").append(greet);
-
+        //for debug
         console.log("render1")
     });
 
@@ -69,8 +72,8 @@ function render2() {
         //repeat for each response
         for (var i = 0; i < response.Birthdays.length; i++) {
             //creates a div and adding a class to make it a row
-            var row = $("<div>").addClass("row test celeb-" + i)
-                //placing row in its place
+            var row = $("<div>").addClass("row celeb-" + i);
+            //placing row in its place
             $(".stuffin").append(row);
 
             //creates a div and adding a class to make it a column
@@ -78,7 +81,7 @@ function render2() {
 
             //adding a img url
             img.attr("src", "https://celebritybucks.com/images/celebs/full/" + response.Birthdays[i].celebId + ".jpg");
-                //placing img in its place
+            //placing img in its place
             console.log(response.Birthdays[i].celebId);
             row.append(img);
             //adding a class to make it a column and input response data
