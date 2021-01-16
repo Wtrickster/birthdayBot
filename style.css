@@ -27,3 +27,19 @@ body {
 font-size: 200%;
 }
 
+.btn {
+    color: #211A1E;
+    background-color: #FDE74C;
+    padding-bottom: 25%;
+    border-style:solid;
+    border-width: 1px;
+    border-color:#211A1E;
+    }
+
+.select-dropdown {
+    color: #211A1E;
+    }
+
+.input-field>label{
+    color: #211A1E;
+    }

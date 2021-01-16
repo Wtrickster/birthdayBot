@@ -11,8 +11,13 @@ var curday = function(sp) {
 };
 console.log(curday('-'));
 
-//
-var userName = " "
+//local storage
+document.getElementById("submit").onclick = function enter() {
+    //local storage
+    localStorage.setItem("userName", document.getElementById("userName").value);
+    //for debug
+    console.log(localStorage["userName"]);
+};
 
 //start on load
 $(document).ready(function() {
@@ -42,7 +47,7 @@ function render1() {
         //creates a div
         var greet = $("<div>");
         //input response data
-        greet.text("Hi there" + userName + "Which " + response + "'s birthday is today?");
+        greet.text("Hi there" + localStorage["userName"] + "! Which " + response + "'s birthdays is today?");
         //placing row in its place
         $(".greet").append(greet);
         //for debug
