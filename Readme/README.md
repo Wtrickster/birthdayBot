@@ -12,7 +12,7 @@ Instructions:
  
  NOTE:
     if text is missing click on BB's name to wake it up
-  2-After you click on the yellow button BB with greet you and tell you the least Celleb gossip
+  2-After you click on the yellow button BB with greet you and tell you the least gossip
 <img src = Screenshot2.png width=500>
 
 
