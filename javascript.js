@@ -11,10 +11,10 @@ var curday = function(sp) {
 };
 //for debug
 console.log(curday('-'));
-
-//
+var cake = localStorage["userName"]
+    //
 function page() {
-    if (localStorage["userName"].length > 1) {
+    if (cake.length > 1) {
         render1();
         render2();
         //for debug
