@@ -5,4 +5,5 @@ Group Project
 Motivation:
   Wanted to make the website equivalent of a piece of candy- a small but fun diversion with some universally appealing trivia. Could easily be used by a local news station to fill time with.
 
-<img src = Readme/Screenshot1.png width=100>
+<img src = Screenshot1.png width=100>
+![](Screenshot1.png)
