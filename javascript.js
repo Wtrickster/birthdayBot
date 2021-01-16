@@ -9,23 +9,70 @@ var curday = function(sp) {
     if (mm < 10) mm = '0' + mm;
     return (yyyy + sp + mm + sp + dd);
 };
+//for debug
 console.log(curday('-'));
 
-//local storage
-document.getElementById("submit").onclick = function enter() {
-    //local storage
-    localStorage.setItem("userName", document.getElementById("userName").value);
+//
+function page() {
+    if (localStorage["userName"].length > 1) {
+        render1();
+        render2();
+        //for debug
+    } else {
+        request();
+    };
     //for debug
+    console.log("ready!");
     console.log(localStorage["userName"]);
+}
+
+//reset local storage
+function reset() {
+    localStorage.setItem("userName", " ")
+        //reload page
+    location.reload();
+    //for debug
+    console.log("reset");
+};
+
+//save userName to localStorage
+function submit() {
+    var person = document.getElementById("person").value
+        //local storage
+    localStorage.setItem("userName", person);
+    //for debug
+    console.log("submitted")
+    console.log(localStorage["userName"]);
+    //reload page
+    location.reload();
 };
 
 //start on load
-$(document).ready(function() {
-    render1();
-    render2();
-    //for debug
-    console.log("ready!");
-});
+$(document).ready(page());
+
+//request for name
+function request() {
+    //creates a div and adding a class to make it a row
+    var row = $("<div>").addClass("row");
+    //adding text requesting name
+    row.text("Hello there! I am Birthday Bot! What is your name?");
+    //placing row in its place
+    $(".greet").append(row);
+
+    //creates input
+    var input = $("<input>");
+    //grants attr and classes
+    input.attr("type", "text").attr("placeholder", "Please Enter Name Here").attr("id", "person").addClass("validate input-field col s12 l4 offset-l2");
+    //places input
+    row.append(input);
+
+    //creates button
+    var button = $("<button>");
+    //grants attr and classes
+    button.attr("name", "action").attr("type", "submit").text("Submit").addClass("btn waves-effect waves-light col s4 l2 offset-l2").attr("onclick", "submit()");
+    //places input
+    row.append(button);
+};
 
 //zodiac API
 function render1() {
@@ -47,7 +94,7 @@ function render1() {
         //creates a div
         var greet = $("<div>");
         //input response data
-        greet.text("Hi there" + localStorage["userName"] + "! Which " + response + "'s birthdays is today?");
+        greet.text("Hello there " + localStorage["userName"] + "! Here is my list of which " + response + "'s birthday is today?");
         //placing row in its place
         $(".greet").append(greet);
         //for debug
