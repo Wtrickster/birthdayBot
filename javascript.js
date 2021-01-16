@@ -13,7 +13,7 @@ var curday = function(sp) {
 console.log(curday('-'));
 
 //
-var user = localStorage.setItem("userName", "")
+localStorage.setItem("userName", "")
 
 //
 function page() {
