@@ -11,8 +11,8 @@ var curday = function(sp) {
 };
 //for debug
 console.log(curday('-'));
-var cake = localStorage["userName"]
-    //
+var cake = localStorage["userName"] || "";
+//
 function page() {
     if (cake.length > 1) {
         render1();
@@ -23,7 +23,7 @@ function page() {
     };
     //for debug
     console.log("ready!");
-    console.log(localStorage["userName"]);
+    console.log(cake);
 }
 
 //reset local storage
