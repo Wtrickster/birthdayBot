@@ -13,9 +13,6 @@ var curday = function(sp) {
 console.log(curday('-'));
 
 //
-localStorage.setItem("userName", "")
-
-//
 function page() {
     if (localStorage["userName"].length > 1) {
         render1();
