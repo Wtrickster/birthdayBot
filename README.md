@@ -7,11 +7,13 @@ Motivation:
 
 Instructions:
   1-Enter what you want BB to call you on the line then click the yellow button
+  
 <img src = Screenshot1.png width=500>
  
  
  NOTE:
     if text is missing click on BB's name to wake it up
+
   2-After you click on the yellow button BB with greet you and tell you the least gossip
 <img src = Screenshot2.png width=500>
 
