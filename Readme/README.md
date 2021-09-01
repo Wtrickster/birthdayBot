@@ -4,7 +4,7 @@
 
 # Description
 
-  * An app that displays a list of what celebrities birthdays are on the current day
+  * An app that displays a list of what celebrities birthdays are on the current day along with a personalized welcome message
 
 
 ## Table of Contents
