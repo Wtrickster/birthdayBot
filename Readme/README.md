@@ -33,7 +33,9 @@
 
   [GitHub](https://github.com/Wtrickser/burgerLogger) [Heroku](https://wtrickser.github.io/birthdayBot/)
 
-  <img src = Pic1.png width=500>
+  <img src = Screenshot1.png width=500>
+  
+  <img src = Screenshot2.png width=500>
 
   *
 
