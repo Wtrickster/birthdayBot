@@ -1,27 +1,59 @@
 # birthdayBot
-Group Project
-♈♉♊♋♌♍♎♏♐♑♒♓
 
-Motivation:
-  Wanted to make the website equivalent of a piece of candy- a small but fun diversion with some universally appealing trivia. Could easily be used by a local news station to fill time with.
+  ![GitHub](https://img.shields.io/badge/license-MIT-purple?style=plastic)
 
-Instructions:
-  1-Enter what you want BB to call you on the line then click the yellow button
+# Description
+
+  * An app that displays a list of what celebrities birthdays are on the current day along with a personalized welcome message
+
+
+## Table of Contents
+
+  * [Description](#Description)
+  * [Installation](#Installation)
+  * [Usage](#Usage)
+  * [Contributions](#contributions)
+  * [Credits](#Credits)
+  * [Technologies](#Technologies)
+  * [Questions](#Questions)
   
-<img src = Screenshot1.png width=500>
- 
- 
- NOTE:
-    if text is missing click on BB's name to wake it up
-
-  2-After you click on the yellow button BB with greet you and tell you the least gossip
-<img src = Screenshot2.png width=500>
-
-
-  3-When you return to the page on a later date BB will remember you and greet you without any input requried
   
-  NOTE:
-    if you wish to change your name simple follow step 1 again
+## **Installation**
+  
+  * To install the project follow these steps:
+     1. Clone the application from GitHub with:
+        * git clone https://github.com/Wtrickser/birthdayBot
+  
+  
+# Usage
 
-Deploy application:
-https://wtrickser.github.io/birthdayBot/
+  [GitHub](https://github.com/Wtrickser/burgerLogger) [Heroku](https://wtrickser.github.io/birthdayBot/)
+
+  <img src = Screenshot1.png width=500>
+  
+  <img src = Screenshot2.png width=500>
+
+
+## **Contributions**
+  
+  * Pull requests are welcome.
+  * For major changes, please open an issue first to discuss what you would like to change.
+  * Please make sure to update tests as appropriate.
+
+
+## **Credits**
+  
+  * Front End Developer: [Acruhf](https://github.com/acruhf) [Joseph](https://github.com/Wtrickser)
+  * Back End Developer: [Joseph](https://github.com/Wtrickser)
+
+
+## **Technologies**
+  
+  * Html5
+  * Javascript
+  * CSS
+  
+  
+## **Questions**
+  
+  * If you have questions or you want to share comments, we will be glad to hear from you. Please contact us at JSPenland97@gmail.com
